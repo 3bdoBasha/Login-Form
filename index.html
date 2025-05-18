@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Readex+Pro:wght@160..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="mailto:magwizcontact@gmail.com">Feedback</a></li>
+                <li><a href="https://www.buymeacoffee.com/magwiz">Support</a></li>
+            </ul>
+        </nav>
+        <video src="./background.mp4" loop muted autoplay></video>
+        <form action="submit">
+            <div class="login-box">
+                <h2 class="title">Login</h2>
+                <div class="user-box">
+                    <input type="text" required placeholder="Username" name="username">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="user-box">
+                    <input type="password" required placeholder="Password" name="password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" id="Remember">
+                    <label for="Remember">Remember Me</label>
+                </div>
+                <button type="submit" class="submit-btn" onclick=signUp()>Submit</button>
+                <div class="register">
+                    <p>Do You Have An Account? <a href="#">Register</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer id="about">
+        <p>Copyrights &copy; 2025 | Made By <span style="color: #8a33fd; font-weight: 800;">عبــدالرحمـــن باشــــا</span>
+        </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
